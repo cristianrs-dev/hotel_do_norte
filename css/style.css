@@ -1,8 +1,42 @@
-@media screren and(min-width:500px)and(max-width:570px){
-    .servicos{
+@media screen and (max-width:570px){
+    .descricao{
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
     }
+    .banner{
+        width: 100%;
+    }
+    .servicos{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    
+}
+@media screen and (max-width:990px){
+    .descricao{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+    }
+    .banner{
+        max-width: 100%;
+    }
+    .servicos{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    
+}
+.justificado{
+    text-align:left;
 }
