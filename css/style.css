@@ -23,8 +23,12 @@
     .formulario{
         flex-direction: column;
     }
+    .faixa{
+        display: flex;
+        flex-direction: column;
+        
+    }
    
-    
 }
 @media screen and (max-width:990px){
     .descricao{
