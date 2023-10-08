@@ -6,7 +6,7 @@
         align-items: center;
     }
     .banner{
-        width: 100%;
+        max-width: 100px;
     }
     .servicos{
         display: flex;
@@ -15,9 +15,13 @@
         align-items: center;
         
     }
+
     .rodape{
         flex-direction: column;
         justify-content: center;
+    }
+    .formulario{
+        flex-direction: column;
     }
     
 }
@@ -44,6 +48,10 @@
         justify-content: center;
         align-items: center;
     }
+    .formulario{
+        flex-direction: column;
+    }
+    
     
 }
 .justificado{
@@ -53,12 +61,16 @@
     margin: 10px;
 }
 .zap{
-    width: 60px;
+    width: 50px;
     height: auto;
     position:fixed;
     float: left;
     z-index: 1;
     margin-left: 2px;
+}
+.botao{
+    max-width: 50%;
+    margin-top: 20px;
 }
 .botao-footer{
     width: 50px;
