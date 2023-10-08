@@ -6,7 +6,7 @@
         align-items: center;
     }
     .banner{
-        max-width: 100px;
+        max-width: 100%;
     }
     .servicos{
         display: flex;
