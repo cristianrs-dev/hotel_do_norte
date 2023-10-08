@@ -23,6 +23,7 @@
     .formulario{
         flex-direction: column;
     }
+   
     
 }
 @media screen and (max-width:990px){
@@ -54,12 +55,15 @@
     
     
 }
+@media screen and (max-width:1200px){
+  .espacamento{
+    margin-left: 5px;
+  }
+}
 .justificado{
     text-align:left;
 }
-.contato{
-    margin: 10px;
-}
+
 .zap{
     width: 50px;
     height: auto;
@@ -75,4 +79,8 @@
 .botao-footer{
     width: 50px;
     height: auto;
+}
+.altura{
+    min-height: 400px;
+    height: 400px;
 }
