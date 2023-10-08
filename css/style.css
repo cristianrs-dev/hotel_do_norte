@@ -15,6 +15,10 @@
         align-items: center;
         
     }
+    .rodape{
+        flex-direction: column;
+        justify-content: center;
+    }
     
 }
 @media screen and (max-width:990px){
@@ -35,8 +39,28 @@
         align-items: center;
         
     }
+    .rodape{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     
 }
 .justificado{
     text-align:left;
+}
+.contato{
+    margin: 10px;
+}
+.zap{
+    width: 60px;
+    height: auto;
+    position:fixed;
+    float: left;
+    z-index: 1;
+    margin-left: 2px;
+}
+.botao-footer{
+    width: 50px;
+    height: auto;
 }
