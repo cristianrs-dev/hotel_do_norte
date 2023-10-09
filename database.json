@@ -1,0 +1,11 @@
+{
+    "clientes":[
+        {
+            "nome":"x",
+            "dataEntrada":"data",
+            "dataSaida":"dataSaida",
+            "adultos":"adultos",
+            "criancas":"criancas"
+        }
+    ]
+}
