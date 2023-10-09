@@ -124,31 +124,29 @@
         </div>
       </div>
 
-      <form action="" class="d-flex text-light formulario justify-content-center" id="contato">
+      <form action="" method="POST" class="d-flex text-light formulario justify-content-center" id="contato">
         <div class="m-3 col-sm-12 col-md-12  col-lg-5">
-          <label for="exampleFormControlInput1" class="form-label">Nome</label>
-          <input type="text" class="form-control" id="exampleFormControlInput1">
-          <label for="#" class="form-label">Data de entrada</label>
-          <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-          <label for="exampleFormControlTextarea1" class="form-label mt-1">Observações</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <label  class="form-label">Nome</label>
+          <input type="text" name="nome" pattern="[a-z\s]+$" title="apenas letras" class="form-control" id="exampleFormControlInput1" required>
+          <label  class="form-label">Data de entrada</label>
+          <input type="date" name="dataEntrada" min="1900-01-01" max="2030-12-31" maxlength="10" class="form-control" id="exampleFormControlInput1" required>
+          <label  class="form-label mt-1">Observações</label>
+          <textarea class="form-control" name="obs" id="exampleFormControlTextarea1" rows="3"></textarea>
         </div>
           
-          
-
           <div class="m-3 col-sm-12  col-lg-5">
-            <label for="exampleFormControlInput1" class="form-label">E-mail</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-            <label for="#" class="form-label">Data de saída</label>
-            <input type="date" class="form-control">
+            <label class="form-label">E-mail</label>
+            <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+            <label class="form-label">Data de saída</label>
+            <input type="date" name="dataSaida" min="1900-01-01" max="2030-12-31" maxlength="10" class="form-control" required>
             <div class="faixa">
-              <label for="exampleFormControlTextarea1" class="form-label">Adultos</label>
-              <input type="number" class="w-100" >
-              <label for="exampleFormControlTextarea1" class="form-label">Crianças</label>
-              <input type="number" class="w-100" >
+              <label class="form-label">Adultos</label>
+              <input type="number" name="adultos" pattern="[0-9]+$" title="apenas números" class="w-100" required>
+              <label class="form-label">Crianças</label>
+              <input type="number" name="criancas" pattern="[0-9]+$" title="apenas números" class="w-100" required >
             </div>
             
-            <button type="button" class="btn btn-primary p-2 w-100 botao">Enviar</button>
+            <input type="submit" value="Cadastrar" class="btn btn-primary p-2 w-100 botao"></input>
           </div>
 
       </form>
