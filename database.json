@@ -1,11 +1,24 @@
 {
-    "clientes":[
-        {
-            "nome":"x",
-            "dataEntrada":"data",
-            "dataSaida":"dataSaida",
-            "adultos":"adultos",
-            "criancas":"criancas"
-        }
-    ]
+  "clientes": [
+    {
+      "nome": "",
+      "dataEntrada": "",
+      "obs": "",
+      "email": "",
+      "dataSaida": "",
+      "adultos": "",
+      "criancas": "",
+      "id": 1
+    },
+    {
+      "nome": "cristian ramos",
+      "dataEntrada": "2023-10-12",
+      "obs": "viagem à ferias",
+      "email": "fulano@gmail.com",
+      "dataSaida": "2023-10-12",
+      "adultos": "2",
+      "criancas": "0",
+      "id": 2
+    }
+  ]
 }
