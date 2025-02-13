@@ -1,3 +1,31 @@
+.response-form{
+    max-width: 500px;
+    min-width: 300px;
+    margin: 5px;
+}
+textarea
+{
+    width: 100%;
+}
+input{
+    max-width: 500px;
+    min-width: 300px;
+    min-height: 2rem;
+    border-radius: 1px;
+    border: none;
+    margin-right: 5px;
+}
+.text-justificado{
+    text-align: center;
+}
+input::placeholder{
+    padding-left: 12px;
+}
+.inline{
+    display: block;
+}
+
+
 @media screen and (max-width:570px){
     .descricao{
         display: flex;
@@ -88,3 +116,5 @@
     min-height: 400px;
     height: 400px;
 }
+
+

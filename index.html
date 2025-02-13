@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
     <title>Hotel do Norte</title>
 </head>
 <body>
@@ -119,36 +120,35 @@
       
       <div class="card bg-secondary text-light border-0" style="width: 18rem;">
         <div class="card-body">
-          <h5 class="card-title">Faça sua reserva</h5>
-          <p class="card-text justificado">Entre em contato conosco informando as datas desejadas.<br> Lhe retornaremos informando a disponibilidade e repassando detalhes da reserva</p>
+          <h5 class="card-title text-justificado">Faça sua reserva</h5>
+          <p class="card-text text-justificado">Entre em contato conosco informando as datas desejadas.<br> Lhe retornaremos informando a disponibilidade e repassando detalhes da reserva</p>
         </div>
       </div>
 
-      <form action="http://localhost:3000/clientes" method="POST" class="d-flex text-light formulario justify-content-center" id="contato">
-        <div class="m-3 col-sm-12 col-md-12  col-lg-5">
+      <form action="http://localhost:3000/clientes" method="POST" class="d-flex  text-light formulario justify-content-center" id="contato">
+        <fieldset class="response-form">
           <label  class="form-label">Nome</label>
-          <input type="text" name="nome" pattern="[a-z\s]+$" title="apenas letras" class="form-control" id="exampleFormControlInput1" required>
+          <input class="inline" type="text" name="nome" pattern="[a-z\s]+$" title="apenas letras" placeholder="Digite seu nome completo"  id="exampleFormControlInput1" required>
+          <label class="form-label">E-mail</label>
+          <input class="inline" type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  id="exampleFormControlInput1" placeholder="name@example.com" required>
           <label  class="form-label">Data de entrada</label>
-          <input type="date" name="dataEntrada" min="1900-01-01" max="2030-12-31" maxlength="10" class="form-control" id="exampleFormControlInput1" required>
-          <label  class="form-label mt-1">Observações</label>
-          <textarea class="form-control" name="obs" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
+          <input class="inline" type="date" name="dataEntrada" min="1900-01-01" max="2030-12-31" maxlength="10"  id="exampleFormControlInput1" required>
+          <label class="form-label">Data de saída</label>
+            <input class="inline" type="date" name="dataSaida" min="1900-01-01" max="2030-12-31" maxlength="10"  required>
           
-          <div class="m-3 col-sm-12  col-lg-5">
-            <label class="form-label">E-mail</label>
-            <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
-            <label class="form-label">Data de saída</label>
-            <input type="date" name="dataSaida" min="1900-01-01" max="2030-12-31" maxlength="10" class="form-control" required>
-            <div class="faixa">
-              <label class="form-label">Adultos</label>
-              <input type="number" name="adultos" pattern="[0-9]+$" title="apenas números" class="w-100" required>
-              <label class="form-label">Crianças</label>
-              <input type="number" name="criancas" pattern="[0-9]+$" title="apenas números" class="w-100" required >
-            </div>
+        </fieldset>
+        
+        <fieldset class="inline response-form">
+          
             
+            <label class="form-label">Adultos</label>
+            <input class="inline" type="number" name="adultos" pattern="[0-9]+$" title="apenas números" placeholder="quantidade de adultos" required>
+            <label class="form-label">Crianças</label>
+            <input class="inline" type="number" name="criancas" pattern="[0-9]+$" title="apenas números" placeholder="quantidade de crianças" required >
+            <label  class="form-label mt-1">Observações</label>
+          <textarea class="inline"  rows="4" name="obs" id="exampleFormControlTextarea1" ></textarea>
             <input type="submit" value="Cadastrar" class="btn btn-primary p-2 w-100 botao"></input>
-          </div>
-
+        </fieldset>
       </form>
       
      <a href="#topo">
